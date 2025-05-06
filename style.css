@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #faf8ef;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+.game-container {
+    text-align: center;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.score-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.grid-container {
+    width: min(90vmin, 500px);
+    aspect-ratio: 1 / 1;
+    background: #bbada0;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.grid-cell {
+    aspect-ratio: 1 / 1;
+    background: #cdc1b4;
+    border-radius: 3px;
+    font-size: 55px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+.tile {
+    color: #776e65;
+}
+.tile-2    { background: #eee4da; }
+.tile-4    { background: #ede0c8; }
+.tile-8    { background: #f2b179; color: #f9f6f2; }
+.tile-16   { background: #f59563; color: #f9f6f2; }
+.tile-32   { background: #f67c5f; color: #f9f6f2; }
+.tile-64   { background: #f65e3b; color: #f9f6f2; }
+.tile-128  { background: #edcf72; color: #f9f6f2; font-size: 45px; }
+.tile-256  { background: #edcc61; color: #f9f6f2; font-size: 45px; }
+.tile-512  { background: #edc850; color: #f9f6f2; font-size: 45px; }
+.tile-1024 { background: #edc53f; color: #f9f6f2; font-size: 35px; }
+.tile-2048 { background: #edc22e; color: #f9f6f2; font-size: 35px; }
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #8f7a66;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background: #9f8b76;
+}
